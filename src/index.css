@@ -6,9 +6,8 @@
 }
 
 :root {
-  --blue: #1B263B;
+  --blue: #050647;
   --blue-el: #6a8fb9;
-  --light-blue: #a7bad3;
   --white: #ebebeb;
   --pure-white: #fff;
 }
@@ -19,7 +18,7 @@
 
 /* navbar */
 .glass {
-  background: rgba(5, 6, 71, 0.9);
+  background: rgba(5, 6, 71, 0.8);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -72,13 +71,19 @@ main {
   font-size: large;
 }
 
+.card {
+  border-radius: 10px !important;
+}
+
+/* buttons */
 button {
   background-color: var(--blue-el) !important;
 }
 
-form input,
-textarea {
-  border: 1px solid var(--white);
+.btn-social {
+  background-color: var(--blue-el);
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 
 .go-up {
@@ -86,8 +91,18 @@ textarea {
   border-radius: 50%;
   background-color: var(--blue-el);
   z-index: 1000 !important;
-  margin-bottom: 7rem;
-  margin-right: 5rem;
+  margin-bottom: 170%;
+  margin-right: 50%;
+}
+
+.navbar-toggler {
+  background-color: transparent !important;
+}
+
+/* form */
+form input,
+textarea {
+  border: 1px solid var(--white);
 }
 
 /* footer */
@@ -98,4 +113,49 @@ footer {
   width: 95%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+/* loader */
+.spinner {
+  --clr: var(--white);
+  /* gap between each circle */
+  --gap: 6px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.spinner span {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--clr);
+  opacity: 0;
+}
+
+.spinner span:nth-child(1) {
+  animation: fade 1s ease-in-out infinite;
+}
+
+.spinner span:nth-child(2) {
+  animation: fade 1s ease-in-out 0.33s infinite;
+}
+
+.spinner span:nth-child(3) {
+  animation: fade 1s ease-in-out 0.66s infinite;
+}
+
+@keyframes fade {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
 }

@@ -11,7 +11,7 @@ export default function ContactsSection() {
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     return (
-        <div className="py-3">
+        <div className="pb-5">
             <h2 className="text-center pb-2">Contatti</h2>
 
             {/* <div className="d-flex flex-column justify-content-center align-items-center">

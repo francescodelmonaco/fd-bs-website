@@ -8,7 +8,7 @@ import ProjectCard from "./ProjectCard"
 
 export default function ProjectsSection() {
     return (
-        <div className="py-3">
+        <div className="pb-5">
             <h2 className="text-center pb-2">Progetti</h2>
 
             <div className="d-flex justify-content-center gap-3 flex-column flex-md-wrap">

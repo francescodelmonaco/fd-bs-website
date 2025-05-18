@@ -12,7 +12,7 @@ export default function NavBar() {
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end gap-3">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-end align-items-center text-center gap-3">
                             <li className="nav-item">
                                 <a href="#projects">Progetti</a>
                             </li>
