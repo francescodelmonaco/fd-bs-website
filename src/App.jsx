@@ -5,8 +5,8 @@ import DefaultLayout from "./layouts/DefaultLayout";
 
 // pages
 import HomePage from "./pages/HomePage";
-import ProjectsPage from "./pages/ProjectsPage";
-import ContactsPage from "./pages/ContactsPage";
+// import ProjectsPage from "./pages/ProjectsPage";
+// import ContactsPage from "./pages/ContactsPage";
 
 export default function App() {
   return (
@@ -14,8 +14,8 @@ export default function App() {
       <Routes>
         <Route Component={DefaultLayout}>
           <Route path="/" Component={HomePage} />
-          <Route path="/projects" Component={ProjectsPage} />
-          <Route path="/contacts" Component={ContactsPage} />
+          {/* <Route path="/projects" Component={ProjectsPage} /> */}
+          {/* <Route path="/contacts" Component={ContactsPage} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
