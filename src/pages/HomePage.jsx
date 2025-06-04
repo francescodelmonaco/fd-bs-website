@@ -30,14 +30,20 @@ export default function HomePage() {
                         <img className="w-100 rounded-circle shadow" src="/img/foto-profilo-bw.png" alt="Foto profilo" />
                     </figure>
 
-                    <div className="w-100 d-flex flex-column justify-content-between gap-3">
-                        <p className="text-sans">
+                    <div className="w-75 d-flex flex-column justify-content-between gap-5">
+                        {/* <p className="text-sans">
                             Benvenuto, sono Francesco 👋🏻.
                             <br />
                             Sin da bambino incuriosito dal mondo della tecnologia, ho deciso di trasformare la mia passione in qualcosa di più concreto.
                             <br />
                             Mi affascina tutto ciò che si nasconde dietro le quinte di un sito: perché sì, dietro una "semplice interfaccia" si apre un universo fatto di logica, creatività e un bel po’ di caffè ☕!
-                        </p>
+                        </p> */}
+
+                        <div className="d-flex flex-column gap-1 align-items-center">
+                            <h1 className="text-center">Francesco Delmonaco</h1>
+
+                            <span className="fs-6 text-center">Jr Full Stack Web Developer</span>
+                        </div>
 
                         <div className="text-center d-flex justify-content-between gap-3 flex-lg-row flex-column">
                             <Link

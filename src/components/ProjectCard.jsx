@@ -10,7 +10,7 @@ export default function ProjectCard({ name, image, year, link }) {
         >
             <img src={image} className="card-img" alt={`${name} screen`} />
             <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center shadow text-center">
-                <h5 className="card-title rounded-pill text-bg-light p-3 text-uppercase shadow">{name}</h5>
+                <h6 className="card-title rounded-pill text-bg-light p-3 text-uppercase shadow">{name}</h6>
                 <p className="card-text"><small>{year}</small></p>
             </div>
         </Link>
