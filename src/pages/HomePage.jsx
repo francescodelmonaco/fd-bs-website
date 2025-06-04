@@ -73,13 +73,15 @@ export default function HomePage() {
                 </div>
             </div>
 
-            <div id="projects">
-                <ProjectsSection />
-            </div>
+            <div id="projects"></div>
 
-            <div id="contacts">
-                <ContactsSection />
-            </div>
+            <ProjectsSection />
+
+            <div id="contacts"></div>
+
+            <ContactsSection />
+
+            <div id="contacts"></div>
 
             {showGoUp && (
                 <div className="d-flex justify-content-end position-fixed bottom-0 end-0">

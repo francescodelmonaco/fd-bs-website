@@ -2,6 +2,7 @@
 import KickShopScreen from "/img/kick-shop-screen.webp"
 import RandomMailGeneratorScreen from "/img/random-mail-generator-screen.webp"
 import BooRoadScreen from "/img/booroad-screen.webp"
+import TaskManager from "/img/task-manager-screen.webp"
 
 // components
 import ProjectCard from "./ProjectCard"
@@ -31,6 +32,13 @@ export default function ProjectsSection() {
                     image={BooRoadScreen}
                     year={2025}
                     link={"https://github.com/francescodelmonaco/BooRoad"}
+                />
+
+                <ProjectCard
+                    name={"Task manager"}
+                    image={TaskManager}
+                    year={2025}
+                    link={"https://github.com/francescodelmonaco/ex-react-task-manager"}
                 />
 
                 <ProjectCard

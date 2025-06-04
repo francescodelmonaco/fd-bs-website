@@ -16,6 +16,15 @@
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
+body {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+#projects,
+#contacts {
+  height: 7vh;
+}
+
 /* navbar */
 .glass {
   background: rgba(5, 6, 71, 0.8);
@@ -53,7 +62,7 @@ li::after {
   background-color: var(--white);
   transform: scaleX(0);
   transform-origin: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 li:hover::after {
@@ -75,15 +84,30 @@ main {
   border-radius: 10px !important;
 }
 
+.card:hover {
+  transform: scale(1.01);
+  transition: transform .2s;
+}
+
 /* buttons */
 button {
   background-color: var(--blue-el) !important;
+}
+
+button:hover {
+  transform: scale(1.01);
+  transition: transform .2s;
 }
 
 .btn-social {
   background-color: var(--blue-el);
   padding: 0.5rem;
   border-radius: 10px;
+}
+
+.btn-social:hover {
+  transform: scale(1.05);
+  transition: transform .2s;
 }
 
 .go-up {
@@ -93,6 +117,11 @@ button {
   z-index: 1000 !important;
   margin-bottom: 170%;
   margin-right: 50%;
+}
+
+.go-up:hover {
+  transform: scale(1.1);
+  transition: transform .2s;
 }
 
 .navbar-toggler {
